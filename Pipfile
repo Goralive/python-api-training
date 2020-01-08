@@ -13,4 +13,3 @@ pytest-env = "*"
 
 [requires]
 python_version = "3.7"
-1:03:26
