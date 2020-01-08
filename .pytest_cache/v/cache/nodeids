@@ -1,0 +1,4 @@
+[
+  "test/test_user_registration.py::test_can_registrate_user_with_valid_creds",
+  "test/test_user_registration.py::test_cant_registrate_the_same_user"
+]
