@@ -11,6 +11,8 @@ requests = "*"
 faker = "*"
 pytest-env = "*"
 allure-pytest = "*"
+jsonpath-rw = "*"
+pyhamcrest = "*"
 
 [requires]
 python_version = "3.7"

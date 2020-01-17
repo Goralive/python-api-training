@@ -1,2 +1,4 @@
 .vscode
 .pytest_cache
+venv/
+allure_results

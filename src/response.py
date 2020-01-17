@@ -13,11 +13,17 @@ class AssertableResponse(object):
 
         self._response = response
 
-    @allure.step
-    def status_code(self, code):
-        logging.info("Assert: status code should be {}".format(code))
-        return self._response.status_code == code
+    # @allure.step('status code should be "{code}"')
+    # def status_code(self, code):
+    #     logging.info("Assert: status code should be {}".format(code))
+    #     return self._response.status_code == code
 
-    @allure.step
-    def field(self, name):
-        return self._response.json()[name]
+    # @allure.step
+    # def field(self, name):
+    #     return self._response.json()[name]
+
+    @allure.step('response should have {condition}')
+    def should_have(self, condition):
+        logging.info("About to check" + str(condition))
+        condition.match(self._response)
+        return self
